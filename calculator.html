@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<title>calculator</title>
+</head>
+<body>
+	
+	<form>
+	   <label >First Element : </label><br>
+	   <input type="text" placeholder="enter first number" class="form-control mr-sm-3" id="first"> <br>
+	   <label>Second Element :</label><br>
+	   <input type="text" placeholder="enter second element" class="form-control mr-sm-3" id="second"><br>
+	   <label >Choose</label><br>
+	   <input type="text" id="third" placeholder="1/2"> 
+	   <button id="button" type="button" class="btn btn-success" onclick="myfunction()">click here
+	   </button>
+	</form>
+       <p id="aa"></p>
+	   <script>
+	   	function myfunction() {
+	   		x=document.getElementById("first").value;
+	   		y=document.getElementById("second").value;
+	   		z=document.getElementById("third").value;
+	   	
+
+        if(z==1){
+        	document.getElementById("aa").innerHTML="sum :" + (x+y);
+        }
+        else(z==2){
+        	document.getElementById("aa").innerHTML="sub :"+(x-y);
+        }}
+    </script>
+</body>
+</html>
